@@ -1,0 +1,148 @@
+body {
+  box-sizing: border-box;
+  margin: 10px;
+  font-family: "Spartan", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1500px;
+  padding: 40px;
+}
+
+.top-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 50px;
+  margin-bottom: 50px;
+}
+
+.main-text {
+  color: #502050;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.bottom-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buyer {
+  color: white;
+  background-color: #502050;
+  padding: 25px;
+  border-radius: 0.5em;
+  max-width: 350px;
+  margin: 25px;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+}
+
+.buyer > img {
+  border-radius: 50%;
+}
+
+.buyer > h5 {
+  line-height: 1.5rem;
+}
+
+.buyer-feedback {
+  grid-column: span 2;
+  margin-top: 20px;
+}
+
+.ratings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.rating {
+  background-color: #f7f2f7;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 0.5em;
+  color: #502050;
+  font-weight: 700;
+  width: 300px;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.stars > i {
+  color: goldenrod;
+}
+
+.rating-1 {
+  margin-right: 80px;
+}
+
+.rating-2 {
+  margin-right: 40px;
+}
+
+.buyer {
+  color: white;
+  background-color: #502050;
+  padding: 25px;
+  border-radius: 0.5em;
+}
+
+.buyer-2 {
+  position: relative;
+  top: 20px;
+}
+
+.buyer-3 {
+  position: relative;
+  top: 40px;
+}
+.verified {
+  color: #ee68a4;
+}
+
+@media only screen and (max-width: 400px) {
+  .wrapper {
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-width: 888px) {
+  .main-text {
+    text-align: center;
+  }
+
+  .ratings {
+    align-items: center;
+  }
+
+  .rating-1 {
+    margin-right: 10px;
+  }
+
+  .rating-2 {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 1467px) {
+  .buyer-2 {
+    top: 0px;
+  }
+
+  .buyer-3 {
+    top: 0px;
+  }
+}
